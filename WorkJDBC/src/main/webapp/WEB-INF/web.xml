@@ -1,0 +1,47 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>loginController</servlet-name>
+  	<display-name>loginController</display-name>
+  	<description></description>
+  	<servlet-class>Controller.loginController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>addOrderController</servlet-name>
+  	<display-name>addOrderController</display-name>
+  	<description></description>
+  	<servlet-class>Controller.addOrderController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>updateController</servlet-name>
+  	<display-name>updateController</display-name>
+  	<description></description>
+  	<servlet-class>Controller.updateController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>deleteController</servlet-name>
+  	<display-name>deleteController</display-name>
+  	<description></description>
+  	<servlet-class>Controller.deleteController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>loginController</servlet-name>
+  	<url-pattern>/loginController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>addOrderController</servlet-name>
+  	<url-pattern>/addOrderController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>updateController</servlet-name>
+  	<url-pattern>/updateController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>deleteController</servlet-name>
+  	<url-pattern>/deleteController</url-pattern>
+  </servlet-mapping>
+</web-app>

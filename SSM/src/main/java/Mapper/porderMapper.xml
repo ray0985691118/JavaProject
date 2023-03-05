@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="porderMapper">
+
+	<select id="selectRange" resultType="Model.Porder">
+		select * from porder where sum between #{start} and #{end}
+	</select>
+	
+	<select id="selectAll" resultType="Model.Porder">
+	select * from porder
+	</select>
+	
+	<select id="selectId" resultType="Model.Porder">
+	select * from porder where id=#{id}
+	</select>
+	
+	<insert id="add" parameterType="Model.Porder">
+	insert into porder(name,arabica,mandheling,yirgacheffe,sum,discountprice,date)
+  	values(#{name},#{arabica},#{mandheling},#{yirgacheffe},#{sum},#{discountprice},#{date})
+	</insert>
+	
+	<update id="update" parameterType="Model.Porder">
+	update porder set name=#{name},arabica=#{arabica},mandheling=#{mandheling},yirgacheffe=#{yirgacheffe}
+  	,sum=#{sum},discountprice=#{discountprice},date=#{date} where id=#{id}
+	</update>
+	
+	 <delete id="delete" parameterType="Model.Porder">
+  delete from porder where id=#{id}
+  </delete>
+</mapper>

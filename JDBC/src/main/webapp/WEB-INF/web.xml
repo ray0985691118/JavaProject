@@ -1,0 +1,77 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>LoginController</servlet-name>
+  	<display-name>LoginController</display-name>
+  	<description></description>
+  	<servlet-class>Controller.LoginController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>AddOrderController</servlet-name>
+  	<display-name>AddOrderController</display-name>
+  	<description></description>
+  	<servlet-class>Controller.AddOrderController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>UpdateController</servlet-name>
+  	<display-name>UpdateController</display-name>
+  	<description></description>
+  	<servlet-class>Controller.UpdateController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>DeleteController</servlet-name>
+  	<display-name>DeleteController</display-name>
+  	<description></description>
+  	<servlet-class>Controller.DeleteController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>AddMemberController</servlet-name>
+  	<display-name>AddMemberController</display-name>
+  	<description></description>
+  	<servlet-class>Controller.AddMemberController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>QueryController</servlet-name>
+  	<display-name>QueryController</display-name>
+  	<description></description>
+  	<servlet-class>Controller.QueryController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>CheckEmailController</servlet-name>
+  	<display-name>CheckEmailController</display-name>
+  	<description></description>
+  	<servlet-class>Controller.CheckEmailController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>LoginController</servlet-name>
+  	<url-pattern>/LoginController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>AddOrderController</servlet-name>
+  	<url-pattern>/AddOrderController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>UpdateController</servlet-name>
+  	<url-pattern>/UpdateController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>DeleteController</servlet-name>
+  	<url-pattern>/DeleteController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>AddMemberController</servlet-name>
+  	<url-pattern>/AddMemberController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>QueryController</servlet-name>
+  	<url-pattern>/QueryController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>CheckEmailController</servlet-name>
+  	<url-pattern>/CheckEmailController</url-pattern>
+  </servlet-mapping>
+</web-app>
